@@ -52,7 +52,7 @@ const DeliveryHighlight = () => {
               Fastest Delivery in <span className="text-green-600">Your City!</span>
             </h2>
             <p className="text-gray-600 text-base mt-3 font-medium leading-relaxed">
-              আমরা চট্টগ্রামের প্রধান এলাকাগুলোতে সরাসরি আপনাদের দরজায় ফ্রেশ গ্রোসারি পৌঁছে দিচ্ছি। আপনার সময় আমাদের কাছে মূল্যবান।
+             Fresh groceries delivered to your doorstep across key areas of Chattogram, <br /> because your time matters.
             </p>
           </motion.div>
 

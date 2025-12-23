@@ -135,7 +135,7 @@ const MyCart = () => {
                                     <td className="px-6 py-6">
                                         <div className="flex items-center justify-center gap-3 bg-gray-100 w-fit mx-auto px-3 py-1.5 rounded-xl border border-gray-200">
                                             <button className="text-gray-400 hover:text-red-500 transition-colors active:scale-90"><Minus size={16} /></button>
-                                            <span className="font-black text-gray-800 min-w-[20px] text-center font-mono">{item.qty}</span>
+                                            <span className="font-black text-gray-800 min-w-5 text-center font-mono">{item.qty}</span>
                                             <button className="text-gray-400 hover:text-green-600 transition-colors active:scale-90"><Plus size={16} /></button>
                                         </div>
                                     </td>
