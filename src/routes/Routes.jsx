@@ -10,6 +10,8 @@ import Home from "../pages/USER/Home";
 import Products from "../pages/USER/Product"; 
 import Userfaq from "../pages/USER/userfaq"; 
 import UserProductDetails from "../pages/USER/UserProductDetails"; // ১. ইমপোর্ট করুন
+import MyDashBoard from "../pages/USER/MyDashBoard";
+import MyCart from "../pages/USER/MyCart";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +48,14 @@ const router = createBrowserRouter([
       {
         index: true, 
         element: <Home />,
+      },
+      {
+        path: "dashboard", // /user/dashboard
+        element: <MyDashBoard />,
+      },
+      {
+        path: "cart", // /user/cart
+        element: <MyCart />,
       },
       {
         path: "products", 

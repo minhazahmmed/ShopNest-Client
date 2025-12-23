@@ -9,9 +9,6 @@ import { Link, NavLink, useNavigate } from "react-router";
 
 const UserNav = () => {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-    
-    // ১. কার্ট আইটেমের সংখ্যা ট্র্যাকিং করার জন্য (Demo State)
-    // বাস্তব প্রজেক্টে এখানে আপনি CartContext থেকে ডাটা নিবেন
     const [cartCount, setCartCount] = useState(2); 
 
     const { logOut } = useContext(AuthContext);
@@ -60,16 +57,20 @@ const UserNav = () => {
                     <NavLink to="/user/faq" className={activeClass}>FAQ</NavLink>
                 </div>
 
-                {/* Shopping Basket Icon with Dynamic Badge */}
+                {/* Shopping Basket - ক্লিক করলে সরাসরি কার্ট পেজে যাবে */}
                 <div className="flex items-center gap-4 md:gap-6">
-                    <button onClick={toggleDrawer} className="relative p-2 bg-green-50 text-green-600 rounded-full hover:bg-green-600 hover:text-white transition-all active:scale-95">
+                    <Link to="/user/cart" className="relative p-2 bg-green-50 text-green-600 rounded-full hover:bg-green-600 hover:text-white transition-all active:scale-95">
                         <ShoppingBasket size={24} />
-                        {/* ২. কার্ট কাউন্ট যদি ০ এর বেশি হয় তবেই ব্যাজ দেখাবে */}
                         {cartCount > 0 && (
                             <span className="absolute -top-1 -right-1 bg-orange-500 text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full border-2 border-white animate-in zoom-in duration-300">
                                 {cartCount}
                             </span>
                         )}
+                    </Link>
+                    
+                    {/* ইউজার মেনু ড্রয়ার ওপেন করার জন্য বাটন */}
+                    <button onClick={toggleDrawer} className="p-2 bg-gray-100 text-gray-600 rounded-full hover:bg-green-600 hover:text-white transition-all">
+                        <User size={24} />
                     </button>
                 </div>
             </div>
@@ -96,12 +97,13 @@ const UserNav = () => {
                     <div className="flex flex-col gap-1.5 grow overflow-y-auto">
                         <p className="text-[11px] uppercase tracking-wider text-gray-400 font-bold ml-3 mb-1">Personal</p>
                         
-                        {/* ৩. Dashboard এবং Cart-এর পাথ আপডেট করা হয়েছে */}
-                        <NavLink to="/user" onClick={toggleDrawer} className={drawerActiveClass} end>
+                        {/* ১. My Dashboard পাথ ফিক্স করা হয়েছে */}
+                        <NavLink to="/user/dashboard" onClick={toggleDrawer} className={drawerActiveClass}>
                            <History size={20} className="shrink-0" /> My Dashboard
                         </NavLink>
                         
-                        <NavLink to="/user/products" onClick={toggleDrawer} className={drawerActiveClass}>
+                        {/* ২. My Cart পাথ ফিক্স করা হয়েছে */}
+                        <NavLink to="/user/cart" onClick={toggleDrawer} className={drawerActiveClass}>
                            <ShoppingBag size={20} className="shrink-0" /> My Cart & Orders
                         </NavLink>
 
@@ -112,7 +114,6 @@ const UserNav = () => {
                            <LayoutGrid size={20} className="shrink-0" /> All Products
                         </NavLink>
 
-                        {/* ৪. About এবং FAQ পুনরায় যোগ করা হলো */}
                         <NavLink to="/user/about" onClick={toggleDrawer} className={drawerActiveClass}>
                            <Info size={20} className="shrink-0" /> About Us
                         </NavLink>
@@ -122,7 +123,6 @@ const UserNav = () => {
                         </NavLink>
                     </div>
 
-                    {/* LOGOUT BUTTON */}
                     <div className="pt-4 border-t border-gray-100">
                         <button 
                             onClick={handleLogOut} 
