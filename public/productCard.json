@@ -1,0 +1,313 @@
+[
+  {
+    "id": 1,
+    "name": "Fresh Ilish Fish (Size 1kg+)",
+    "category": "Fish",
+    "price": 1650,
+    "unit": "1 Piece",
+    "rating": 4.9,
+    "stock": 15,
+    "description": "Premium quality Padma Ilish, fresh and silver-colored.",
+    "image": "https://i.imgur.com/EAdRr5b.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Premium Beef leg Cut",
+    "category": "Meat",
+    "price": 750,
+    "unit": "1 kg",
+    "rating": 4.8,
+    "stock": 25,
+    "description": "Fresh local beef, perfectly cut for traditional program .",
+    "image": "https://i.imgur.com/YCDIW3d.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Organic Turmeric Powder",
+    "category": "Masala",
+    "price": 120,
+    "unit": "200 gm",
+    "rating": 4.7,
+    "stock": 50,
+    "description": "Pure sun-dried turmeric powder without any artificial color.",
+    "image": "https://i.imgur.com/Y86fapw.jpeg"
+  },
+  {
+  "id": 4,
+  "name": "Harpic Power Plus Toilet Cleaner",
+  "category": "Consumer",
+  "price": 210,
+  "unit": "200 ml",
+  "rating": 4.6,
+  "stock": 40,
+  "description": "Powerful toilet cleaner that removes tough stains, kills 99.9% of germs, and leaves a fresh fragrance. Designed for deep cleaning and long-lasting hygiene.",
+  "image": "https://i.imgur.com/h8VdInN.jpeg"
+},
+
+  {
+    "id": 5,
+    "name": "Rui Fish",
+    "category": "Fish",
+    "price": 380,
+    "unit": "1 kg",
+    "rating": 4.5,
+    "stock": 20,
+    "description": "Freshly cleaned and sliced Rui fish from local ponds.",
+    "image": "https://i.imgur.com/3rVGPWC.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Deshi Broiler Chicken",
+    "category": "Meat",
+    "price": 190,
+    "unit": "1 kg",
+    "rating": 4.4,
+    "stock": 60,
+    "description": "Farm-fresh chicken, processed and cleaned hygienically.",
+    "image": "https://images.unsplash.com/photo-1587593810167-a84920ea0781?q=80&w=500"
+  },
+  {
+    "id": 7,
+    "name": "Red Chili Powder",
+    "category": "Masala",
+    "price": 150,
+    "unit": "200 gm",
+    "rating": 4.6,
+    "stock": 45,
+    "description": "Extra spicy red chili powder for a rich color and heat.",
+    "image": "https://i.imgur.com/qpVFfDy.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Miniket Rice Premium",
+    "category": "Grocery",
+    "price": 340,
+    "unit": "5 kg",
+    "rating": 4.8,
+    "stock": 100,
+    "description": "Thin and long-grain Miniket rice, polished and stone-free.",
+    "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=500"
+  },
+  {
+    "id": 9,
+    "name": "Tiger Prawn (Bagda)",
+    "category": "Fish",
+    "price": 950,
+    "unit": "500 gm",
+    "rating": 4.7,
+    "stock": 12,
+    "description": "Large size sea prawns, perfect for grilling or malai curry.",
+    "image": "https://i.imgur.com/zUldXdf.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Mutton (Khashi) Meat",
+    "category": "Meat",
+    "price": 1100,
+    "unit": "1 kg",
+    "rating": 4.9,
+    "stock": 10,
+    "description": "Fresh and tender mutton meat with minimal fat.",
+    "image": "https://i.imgur.com/spTQKTr.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "Cumin (Jeera) Powder",
+    "category": "Masala",
+    "price": 180,
+    "unit": "100 gm",
+    "rating": 4.5,
+    "stock": 55,
+    "description": "Aromatic roasted cumin powder for enhanced flavor.",
+    "image": "https://i.imgur.com/MDe3WgM.jpeg"
+  },
+  {
+    "id": 12,
+    "name": "Musur Dal (Lentils)",
+    "category": "Grocery",
+    "price": 140,
+    "unit": "1 kg",
+    "rating": 4.7,
+    "stock": 80,
+    "description": "High-quality red lentils, clean and quick-cooking.",
+    "image": "https://i.imgur.com/WmUuhJU.jpeg"
+  },
+  {
+    "id": 13,
+    "name": "Dettol Liquid Antiseptic",
+    "category": "Consumer",
+    "price": 245,
+    "unit": "500 ml",
+    "rating": 4.9,
+    "stock": 35,
+    "description": "Trusted protection against germs and infections.",
+    "image": "https://i.imgur.com/QK6FOkM.jpeg"
+  },
+  {
+    "id": 14,
+    "name": "Rupchanda (Pomfret) Fish",
+    "category": "Fish",
+    "price": 220,
+    "unit": "1 kg",
+    "rating": 4.2,
+    "stock": 30,
+    "description": "Budget-friendly fresh Pangash fish from local farms.",
+    "image": "https://i.imgur.com/oGzTkdB.jpeg"
+  },
+  {
+    "id": 15,
+    "name": "Beef (Pure Meat)",
+    "category": "Meat",
+    "price": 800,
+    "unit": "1 kg",
+    "rating": 4.6,
+    "stock": 18,
+    "description": "Finely minced beef, ideal for Mezban or any curry.",
+    "image": "https://i.imgur.com/Cnct116.jpeg"
+  },
+  {
+    "id": 16,
+    "name": "Garam Masala Mix",
+    "category": "Grocery",
+    "price": 95,
+    "unit": "50 gm",
+    "rating": 4.8,
+    "stock": 100,
+    "description": "A blend of premium spices for authentic Bengali flavor.",
+    "image": "https://i.imgur.com/MDe3WgM.jpeg"
+  },
+  {
+    "id": 17,
+    "name": "Iodized Salt",
+    "category": "Grocery",
+    "price": 42,
+    "unit": "1 kg",
+    "rating": 4.5,
+    "stock": 200,
+    "description": "Pure white iodized salt for daily dietary needs.",
+    "image": "https://i.imgur.com/pOTqsQ7.jpeg"
+  },
+  {
+    "id": 18,
+    "name": "Sugar (Deshi)",
+    "category": "Grocery",
+    "price": 145,
+    "unit": "1 kg",
+    "rating": 4.4,
+    "stock": 150,
+    "description": "Refined white sugar for all your sweet dishes.",
+    "image": "https://i.imgur.com/CVOV3YP.jpeg"
+  },
+  {
+    "id": 19,
+    "name": "Pepsodent Toothpaste",
+    "category": "Consumer",
+    "price": 185,
+    "unit": "200 gm",
+    "rating": 4.7,
+    "stock": 45,
+    "description": "Germicheck formula for strong teeth and fresh breath.",
+    "image": "https://i.imgur.com/qWLNVFc.jpeg"
+  },
+  {
+    "id": 20,
+    "name": "Garlic (Deshi)",
+    "category": "Grocery",
+    "price": 260,
+    "unit": "1 kg",
+    "rating": 4.6,
+    "stock": 40,
+    "description": "Small-sized local garlic with a strong pungent aroma.",
+    "image": "https://images.unsplash.com/photo-1540148426945-6cf22a6b2383?q=80&w=500"
+  },
+  {
+  "id": 21,
+  "name": "Lux Soft Touch Beauty Soap",
+  "category": "Consumer",
+  "price": 55,
+  "unit": "100 g",
+  "rating": 4.5,
+  "stock": 120,
+  "description": "Premium beauty soap enriched with floral fragrance that gently cleanses the skin and leaves it soft, smooth, and fragrant after every wash.",
+  "image": "https://i.imgur.com/wEAeLSA.jpeg"
+},
+{
+  "id": 22,
+  "name": "Aloo (Potato)",
+  "category": "Vegetables",
+  "price": 45,
+  "unit": "1 kg",
+  "rating": 4.3,
+  "stock": 200,
+  "description": "Fresh local potatoes suitable for everyday cooking, curries, and fries.",
+  "image": "https://i.imgur.com/1yXXOQm.jpeg"
+},
+{
+  "id": 23,
+  "name": "Carrot",
+  "category": "Vegetables",
+  "price": 80,
+  "unit": "1 kg",
+  "rating": 4.4,
+  "stock": 150,
+  "description": "Crunchy and fresh carrots rich in vitamins, perfect for salads and cooking.",
+  "image": "https://i.imgur.com/X92SUFL.jpeg"
+},
+{
+  "id": 24,
+  "name": "Broccoli",
+  "category": "Vegetables",
+  "price": 180,
+  "unit": "500 g",
+  "rating": 4.6,
+  "stock": 60,
+  "description": "Fresh green broccoli packed with nutrients, ideal for stir-fry and healthy meals.",
+  "image": "https://i.imgur.com/zFpp3fk.jpeg"
+},
+{
+  "id": 25,
+  "name": "Cauliflower",
+  "category": "Vegetables",
+  "price": 70,
+  "unit": "1 pc",
+  "rating": 4.2,
+  "stock": 90,
+  "description": "Farm-fresh cauliflower perfect for curries, frying, and vegetable dishes.",
+  "image": "https://i.imgur.com/FJEVNDK.jpeg"
+},
+{
+  "id": 26,
+  "name": "Red Shak (Red Spinach)",
+  "category": "Vegetables",
+  "price": 30,
+  "unit": "1 bunch",
+  "rating": 4.1,
+  "stock": 110,
+  "description": "Fresh red spinach leaves rich in iron, ideal for bhaji and healthy meals.",
+  "image": "https://i.imgur.com/jUAvU2W.jpeg"
+},
+{
+  "id": 27,
+  "name": "Badhakopi (Cabbage)",
+  "category": "Vegetables",
+  "price": 55,
+  "unit": "1 pc",
+  "rating": 4.3,
+  "stock": 85,
+  "description": "Crisp and fresh cabbage suitable for stir-fry, curries, and salads.",
+  "image": "https://i.imgur.com/uu1z6e3.jpeg"
+},
+{
+  "id": 28,
+  "name": "Mula (Radish)",
+  "category": "Vegetables",
+  "price": 40,
+  "unit": "1 kg",
+  "rating": 4.0,
+  "stock": 70,
+  "description": "Fresh white radish with a mild crunch, perfect for bharta, curry, and salads.",
+  "image": "https://i.imgur.com/jR7x8F3.jpeg"
+}
+
+
+]
