@@ -25,7 +25,7 @@ const UserLoginForm = ({setUserTab}) => {
         const user = userCredential.user;
         setUser(user);
         toast.success("Login successful", { position: "top-right" });
-        navigate(location.state?.from || "/home");
+        navigate(location.state?.from || "/user");
       })
       .catch((error) => {
         toast.error("Invalid credential", { position: "top-right" });
@@ -42,7 +42,7 @@ const UserLoginForm = ({setUserTab}) => {
       toast.success("Login successful");
 
       setTimeout(() => {
-        navigate("/home");
+        navigate("/user");
       }, 400);
     })
     .catch((error) => {

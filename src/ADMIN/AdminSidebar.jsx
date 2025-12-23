@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { LayoutDashboard, PlusCircle, Package, Settings, LogOut } from 'lucide-react';
+import { LayoutDashboard, PlusCircle, Package, Settings, LogOut, ShoppingCart, Users, Home } from 'lucide-react';
 import { AuthContext } from '../Provider/AuthProvider';
 import { toast } from 'react-toastify';
 
@@ -16,10 +16,13 @@ const AdminSidebar = () => {
             });
     };
 
+    // ই-কমার্স ড্যাশবোর্ডের জন্য মেনু লিস্ট
     const menus = [
         { name: "Overview", path: "/admin/home", icon: <LayoutDashboard size={20} /> },
+        { name: "All Orders", path: "/admin/orders", icon: <ShoppingCart size={20} /> },
+        { name: "All Users", path: "/admin/users", icon: <Users size={20} /> },
         { name: "Add Product", path: "/admin/add", icon: <PlusCircle size={20} /> },
-        { name: "Manage Inventory", path: "/admin/inventory", icon: <Package size={20} /> },
+        { name: "Inventory", path: "/admin/inventory", icon: <Package size={20} /> },
         { name: "Settings", path: "/admin/settings", icon: <Settings size={20} /> },
     ];
 
@@ -27,10 +30,10 @@ const AdminSidebar = () => {
         <div className="w-64 h-screen bg-white border-r border-gray-100 p-6 flex flex-col fixed left-0 top-0 z-50">
             <div className="flex items-center gap-2 mb-10 px-2">
                 <div className="w-8 h-8 bg-green-600 rounded-lg shadow-lg shadow-green-100"></div>
-                <h1 className="text-xl font-black text-gray-800 tracking-tight">FreshAdmin</h1>
+                <h1 className="text-xl font-black text-gray-800 tracking-tight">ShopNest</h1>
             </div>
 
-            <nav className="flex-1 space-y-2">
+            <nav className="flex-1 space-y-2 overflow-y-auto">
                 {menus.map((menu) => (
                     <NavLink
                         key={menu.path}
@@ -47,12 +50,22 @@ const AdminSidebar = () => {
                 ))}
             </nav>
 
-            <button 
-                onClick={handleLogout}
-                className="flex items-center gap-3 px-4 py-3 text-red-500 font-bold hover:bg-red-50 rounded-xl transition-all mt-auto"
-            >
-                <LogOut size={20} /> Logout
-            </button>
+            <div className="mt-auto space-y-2">
+                {/* ইউজার ইন্টারফেসে ফিরে যাওয়ার বাটন */}
+                <button 
+                    onClick={() => navigate('/user')}
+                    className="w-full flex items-center gap-3 px-4 py-3 text-gray-500 font-bold hover:bg-gray-50 rounded-xl transition-all"
+                >
+                    <Home size={20} /> View Shop
+                </button>
+                
+                <button 
+                    onClick={handleLogout}
+                    className="w-full flex items-center gap-3 px-4 py-3 text-red-500 font-bold hover:bg-red-50 rounded-xl transition-all"
+                >
+                    <LogOut size={20} /> Logout
+                </button>
+            </div>
         </div>
     );
 };
